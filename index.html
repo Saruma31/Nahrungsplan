@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essensplan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dein Essensplan der Woche</h1>
+        <p>Wähle einen Wochentag aus, um den Essensplan für Morgens, Mittags und Abends zu sehen!</p>
+        
+        <div class="weekdays">
+            <button onclick="showPlan('montag')">Montag</button>
+            <button onclick="showPlan('dienstag')">Dienstag</button>
+            <button onclick="showPlan('mittwoch')">Mittwoch</button>
+            <button onclick="showPlan('donnerstag')">Donnerstag</button>
+            <button onclick="showPlan('freitag')">Freitag</button>
+            <button onclick="showPlan('samstag')">Samstag</button>
+            <button onclick="showPlan('sonntag')">Sonntag</button>
+        </div>
+
+        <div id="essen-plan" class="essen-plan">
+            <h2>Essensplan für den Tag:</h2>
+            <div class="meal">
+                <p id="plan-morgens"><strong>Morgens:</strong> Bitte wähle einen Tag aus</p>
+                <img id="img-morgens" src="" alt="Bild für das Frühstück" />
+            </div>
+            <div class="meal">
+                <p id="plan-mittags"><strong>Mittags:</strong> Bitte wähle einen Tag aus</p>
+                <img id="img-mittags" src="" alt="Bild für das Mittagessen" />
+            </div>
+            <div class="meal">
+                <p id="plan-abends"><strong>Abends:</strong> Bitte wähle einen Tag aus</p>
+                <img id="img-abends" src="" alt="Bild für das Abendessen" />
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
